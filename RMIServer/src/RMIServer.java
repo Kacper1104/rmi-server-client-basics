@@ -7,11 +7,11 @@ import java.rmi.registry.Registry;
 public class RMIServer {
 
     public static void main(String [] args){
-        try {
-            Registry reg = LocateRegistry.createRegistry(1099);
-        }catch (RemoteException e){
-            e.printStackTrace();
-        }
+        //try {
+            //Registry reg = LocateRegistry.createRegistry(1099);
+        //}catch (RemoteException e){
+            //e.printStackTrace();
+        //}
 
         if(args.length == 0){
             System.out.println("You have to enter RMI object address in the form: //host_address/service_name\"");

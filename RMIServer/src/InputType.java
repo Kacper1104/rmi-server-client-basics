@@ -3,14 +3,19 @@ import java.io.Serializable;
 public class InputType implements Serializable {
     private static final long serializableVersionUID = 101L;
     String operation;
-    public double x1;
-    public double x2;
+    public String[] list;
+    public String filter;
+    public String[] list2;
 
-    public double getx1(){
-        return x1;
+    public String[] getlist1(){
+        return list;
     }
 
-    public double getx2(){
-        return x2;
+    public String[] getlist2(){
+        return list2;
+    }
+
+    public String getfilter(){
+        return filter;
     }
 }
